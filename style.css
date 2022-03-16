@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-color: #041d48 ;
+  background-position: center;
+  font-family: 'Merriweather', serif;
+}
+
+.navbar{
+  width: 80%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: fadein 2s;
+}
+
+
+
+  
+
+
+.navbar img{
+  width: 30%;
+  height: 10%;
+  
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 25px;
+  position: relative;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  
+  
+}
+
+
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background-color: #c3922d;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+  
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+
+}
+
+
+.villes{
+  display: flex;
+  align-items: center;
+  
+  
+  width: 80%;
+  height: 65%;
+  position: absolute;
+  top: 25%;
+  left:10%;
+  bottom:5%;
+  right: 10%;
+  color: white;
+}
+
+
+
+.bordeaux{
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  border: 2px solid #c3922d;
+  margin: 10px;
+  background-image: url(assets/bordeaux.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  
+  
+}
+
+.lille{
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  border: 2px solid red;
+  margin: 10px;
+  background-image: url(assets/lille.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+.toulouse{
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  border: 2px solid #b91572;
+  margin: 10px;
+  background-image: url(assets/toulouse.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+.paris{
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  border: 2px solid #589dcc;
+  margin: 10px;
+  background-image: url(assets/paris.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+.versailles{
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  border: 2px solid white;
+  margin: 10px;
+  background-image: url(assets/versailles.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+.bordeaux:hover{
+  animation: load 1s;
+  width: 50%;
+  opacity: 0.5;
+
+}
+
+
+.lille:hover{
+  animation: load 1s;
+  width: 50%;
+  opacity: 0.5;
+
+}
+
+.paris:hover{
+  animation: load 1s;
+  width: 50%;
+  opacity: 0.5;
+
+}
+
+
+
+
+.toulouse:hover{
+  animation: load 1s;
+  width: 50%;
+  opacity: 0.5;
+
+}
+
+
+.versailles:hover{
+  animation: load 1s;
+  width: 50%;
+  opacity: 0.5;
+
+}
+
+
+
+
+
+@keyframes fadein {
+  from { opacity: 0}
+  to   { opacity: 1}
+}
+
+@keyframes load {
+  0% {width: 20%;}
+  
+  
+  100% {width: 50%;
+  opacity: 0.5}
+
+
+}
+
+
+
+
+@media screen and (max-width: 428px) and (min-width: 375px){
+  
+  body {
+    background-color: #041d48 ;
+  }
+  
+
+  .navbar{
+    padding:0 12px;
+    position:fixed;
+    z-index:999;
+    width:100%;
+    max-width:480px;
+    background:#041d48;
+    box-sizing:border-box;
+    border-bottom:1px solid #c3922d;
+  }
+  
+  
+  ul,li{
+    display:block;
+    
+  }
+  li{
+    height:10px;
+    font: size 10px;
+    line-height:50px;
+    padding:0 12px;
+    
+    
+  }
+  a{
+    font-size: 1px;
+  }
+  
+  #menu-button{
+    position:absolute;
+    top:-5px;
+    right:5px;
+    width:70px;
+    height:35px;
+    overflow:hidden;
+    background-color: #041d48;
+    color: #c3922d;
+    line-height:50px;
+    text-align:center;
+    font-size:50px;
+    cursor:pointer;
+    transition:all .5s;
+    
+  }
+  
+  
+  
+  #menu-button.close{
+    color:#c3922d;
+    background:#041d48;
+  }
+  #menu-button.close::after{
+    
+    position:absolute;
+    top:-5px;
+    right:5px;
+    width:70px;
+    height:35px;
+    line-height:50px;
+    text-align:center;
+    font-size:50px;
+    cursor:pointer;
+  }
+  
+  #menu{
+    transition:transform .5s;
+    position:absolute;
+    width:100%;
+    max-width:480px;
+    transform:translateY(-300px);
+  
+  }
+  #menu.show-menu{
+    transform:translateY(90px);
+    color: #c3922d;
+  }
+  
+
+  .villes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 80%;
+    height: 85%;
+    position: absolute;
+    top: 20%;
+    left:10%;
+    bottom:5%;
+    right: 10%;
+    color: white;
+  }
+
+
+  .bordeaux{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    border: 5px solid #c3922d;
+    margin: 10px;
+    background-image: url(assets/bordeaux.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 0px;
+    
+    
+    
+  }
+
+  .lille{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    border: 5px solid red;
+    margin: 10px;
+    background-image: url(assets/lille.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -50px;
+  }
+
+  .toulouse{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    border: 5px solid #b91572;
+    margin: 10px;
+    background-image: url(assets/toulouse.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -100px;
+    
+  }
+
+  .paris{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    border: 5px solid #589dcc;
+    margin: 10px;
+    background-image: url(assets/paris.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -100px;
+  }
+
+  .versailles{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    border: 5px solid white;
+    margin: 10px;
+    background-image: url(assets/versailles.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .bordeaux:hover{
+    animation: load 1s;
+    height: 50%;
+    opacity: 0.5;
+
+  }
+
+  
+
+  
+  .lille:hover{
+    animation: load 1s;
+    width: 50%;
+    opacity: 0.5;
+
+  }
+
+  .paris:hover{
+    animation: load 1s;
+    width: 50%;
+    opacity: 0.5;
+
+  }
+
+  
+
+  
+  .toulouse:hover{
+    animation: load 1s;
+    width: 50%;
+    opacity: 0.5;
+
+  }
+
+  
+  .versailles:hover{
+    animation: load 1s;
+    width: 50%;
+    opacity: 0.5;
+
+  }
+
+  @keyframes load {
+    0% {width: 20%;}
+    
+    
+    100% {width: 50%;
+    opacity: 0.5}
+  
+  
+  }
+
+
+
+}

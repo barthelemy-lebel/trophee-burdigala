@@ -1,0 +1,78 @@
+<!--
+Developper : Barhélémy Le-Bel ©
+Description : Home page du site web du trophé Burdigala
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/icone.png">
+    <title>Trophée Burdigala</title>
+</head>
+<body>
+  <div class="banner">
+    
+    <div class="navbar">
+      <img id="logo" src="assets/Logo universel (Bannière (paysage)).webp" alt="logo" onclick="document.location.href='http://127.0.0.1:5500/index.html'">
+      <div id="menu-button" class="close">≡</div>
+      <nav id="menu" class="">
+      <ul>
+        <li id="accueil"><a  href="index.html">Accueil</a></li>
+        <li><a href="about.html">l'Équipe </a></li>
+        <li><a href="#">Galerie</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Créer son maillot</a></li>
+        
+      </ul>
+    </nav>
+    </div>
+
+    <div class="villes">
+      
+        <div class="bordeaux" onclick="document.location.href='http://127.0.0.1:5500/index.html'">
+          <h1>Bordeaux</h1>
+        </div>
+        <div class="lille" onclick="document.location.href='http://127.0.0.1:5500/index.html'">
+          <h1>Lille</h1>
+          
+        </div>
+        <div class="paris" onclick="document.location.href='http://127.0.0.1:5500/index.html'">
+          <h1>Paris</h1>
+        </div>
+        <div class="toulouse" onclick="document.location.href='http://127.0.0.1:5500/index.html'">
+          <h1>Toulouse</h1>
+        </div>
+        <div class="versailles" onclick="document.location.href='http://127.0.0.1:5500/index.html'">
+          <h1>Versailles</h1>
+        </div>
+
+      
+      
+    </div>
+    
+
+    
+  </div>
+
+
+<script>
+  var menuButton = document.querySelector('#menu-button');
+var menu = document.querySelector('#menu');
+
+// show or hide
+menuButton.addEventListener('click',function(){
+  menu.classList.toggle('show-menu');
+  menuButton.classList.toggle('close');
+});
+
+function redirection(url){
+  document.location.href=url; 
+}
+
+</script>
+</body>
+</html>
