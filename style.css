@@ -93,7 +93,7 @@
   text-align: center;
   border: 2px solid #c3922d;
   margin: 10px;
-  background-image: url(assets/bordeaux.jpg);
+  background-image: url(bordeaux.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -108,7 +108,7 @@
   text-align: center;
   border: 2px solid red;
   margin: 10px;
-  background-image: url(assets/lille.jpg);
+  background-image: url(lille.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
