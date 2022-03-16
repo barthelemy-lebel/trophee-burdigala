@@ -102,7 +102,7 @@ body
   text-align: center;
   border: 2px solid #c3922d;
   margin: 10px;
-  background-image: url(assets/bordeaux.jpg);
+  background-image: url(bordeaux.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -117,7 +117,7 @@ body
   text-align: center;
   border: 2px solid red;
   margin: 10px;
-  background-image: url(assets/lille.jpg);
+  background-image: url(lille.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -130,7 +130,7 @@ body
   text-align: center;
   border: 2px solid #b91572;
   margin: 10px;
-  background-image: url(assets/toulouse.jpg);
+  background-image: url(toulouse.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -143,7 +143,7 @@ body
   text-align: center;
   border: 2px solid #589dcc;
   margin: 10px;
-  background-image: url(assets/paris.avif);
+  background-image: url(paris.avif);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -386,7 +386,7 @@ body
     text-align: center;
     border: 5px solid #c3922d;
     margin: 10px;
-    background-image: url(assets/bordeaux.jpg);
+    background-image: url(bordeaux.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -402,7 +402,7 @@ body
     text-align: center;
     border: 5px solid red;
     margin: 10px;
-    background-image: url(assets/lille.jpg);
+    background-image: url(lille.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -415,7 +415,7 @@ body
     text-align: center;
     border: 5px solid #b91572;
     margin: 10px;
-    background-image: url(assets/toulouse.jpg);
+    background-image: url(toulouse.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -442,7 +442,7 @@ body
     text-align: center;
     border: 5px solid white;
     margin: 10px;
-    background-image: url(assets/versailles.webp);
+    background-image: url(versailles.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
